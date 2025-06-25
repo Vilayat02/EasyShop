@@ -90,6 +90,7 @@ public class AuthenticationController {
         }
         catch (Exception e)
         {
+            e.printStackTrace();
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
         }
     }
